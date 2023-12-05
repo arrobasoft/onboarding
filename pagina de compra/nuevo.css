@@ -1,0 +1,129 @@
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    margin: 0;
+    background-color:#efefef;
+}
+
+
+#gato {
+    background-color: black;
+    color: aliceblue;
+    padding: 3rem 2rem;
+    font-size: 1rem;
+}
+
+#gato h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+#gato5 {
+    background-color: black;
+    color: aliceblue;
+    padding: 2rem;
+    font-size: 1rem;
+}
+
+#gato5 p{
+    margin: 0;
+}
+
+#gato6:link {
+    color: #efefef;
+}
+
+
+#gato6 {
+    float: right;
+}
+
+#gato2 {
+    transition: box-shadow 0.3s ease;
+    background-color: #fff;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    padding: 0.25rem 0; 
+}
+
+#gato2 h2,p {
+    margin: 1rem;
+}
+
+#gato2 {
+    cursor: pointer;
+}
+
+#gato2:hover {
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0,5);
+}
+
+#gato3 {
+    transition: box-shadow 0.3s ease;
+    background-color: #fff;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+}
+
+#gato3 h2, p {
+    margin: 1rem;
+}
+
+#gato3 {
+    cursor: pointer;
+}
+
+#gato3:hover {
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0,5);
+}
+
+#gato4 {
+    transition: box-shadow 0.3s ease;
+    background-color: #fff;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+}
+
+#gato4 h2,p {
+    margin: 1rem;
+}
+
+#gato4 {
+    cursor: pointer;
+}
+
+#gato4:hover {
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0,5);
+}
+
+#alinear {
+    width: 250px;
+    margin: 0 auto; 
+}
+
+
+#perro:visited {
+    color: black;
+}
+
+#perro:hover {
+    color: blue;
+}
+
+#perro2:visited {
+    color: black;
+}
+
+#perro2:hover {
+    color: blue;
+}
+
+#perro3:visited {
+    color: black;
+}
+
+#perro3:hover {
+    color: blue;
+}

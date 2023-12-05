@@ -1,0 +1,81 @@
+body {
+   margin: 0;
+}
+
+#arreglar {
+   background-color: black;
+   color: aliceblue;
+   padding: 2rem 1rem;
+   font-size: 3rem;
+}
+
+#calla {
+   background-color: black;
+   color: aliceblue;
+   padding: 2rem;
+   font-size: 1rem;
+}
+
+#palo {
+   float:right ;
+}
+
+#pe {
+   margin: 0;
+}
+
+#float {
+   text-decoration: underline;
+}
+
+#float {
+   transition: 0.3s ease;
+   color: white;
+   text-decoration: none;
+}
+
+#float:hover {
+   color: blue;
+
+}
+
+#fogo {
+   transition: 0.3s ease;
+   color: blue;
+   text-decoration: none;
+}
+
+#fogo:hover {
+   color: chartreuse;
+}
+
+#estados {
+   transition: 0.3s ease;
+   color: chocolate;
+   text-decoration: none;
+}
+
+#estados:hover{
+   color:cadetblue;
+}
+
+#fondo {
+   background-image: url(fondo.png);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   position:sticky;
+   right: 700px;
+}
+
+#rraton {
+   font-family: 'Montserrat', sans-serif;
+}
+
+#final {
+   font-family: 'Montserrat', sans-serif;
+}
+
+#finaly {
+   font-family: 'Montserrat', sans-serif;
+}
