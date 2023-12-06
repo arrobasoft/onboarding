@@ -60,7 +60,7 @@ body {
 }
 
 #fondo {
-   background-image: url(fondo.png);
+   background-image: url(/tarea/img/fondo.png);
    background-size: cover;
    background-repeat: no-repeat;
    background-position: center;
