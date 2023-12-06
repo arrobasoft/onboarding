@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Fiking inicio</title>
+      <link rel="stylesheet" href="style.css"/>
+      <link rel="icon" href="image.ico"/><!-- imagen de la pagina-->
+   </head>
+   <body>
+    <div id="margen">
+       lo mejor de buscar
+    </div>
+          <article id="inicio">
+                <h1>FIKING inicio</h1>
+          </article>
+          <h2>FIKING </h2>
+          <li>
+            <a href="http://127.0.0.1:5500/index.html?username=fddfg" target="_blank">
+              que es HTML5
+            </a>
+         </li> 
+         <li>
+            <a href="http://127.0.0.1:5500/fiking.html" target="_blank">
+              como iniciar con google
+            </a>
+         </li> 
+         <li>
+            <a href="http://127.0.0.1:5500/facebook.html" target="_blank">
+              como iniciar en facebook PC
+            </a>
+         </li> 
+         <li>
+            <a href="http://127.0.0.1:5500/ofertas.html" target="_blank">
+                Fiking COMPRAS
+            </a>
+         </li> 
+        </style>
+    </head>
+    <body>
+        <form id="registration-form">
+            <label for="username">Nombre de Usuario:</label>
+            <input type="text" id="username" name="username" required>
+    
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
+    
+            <label for="confirm-password">Confirmar Contraseña:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+    
+            <button type="button" onclick="register()">Registrarse</button>
+        </form>
+    
+        <script>
+            function register() {
+                var username = document.getElementById('username').value;
+                var password = document.getElementById('password').value;
+                var confirmPassword = document.getElementById('confirm-password').value;
+    
+                if (password !== confirmPassword) {
+                    alert('Las contraseñas no coinciden.');
+                    return;
+                }
+    
+                // En un entorno de producción, enviar esta información al servidor para el registro seguro
+                // Aquí se simula el almacenamiento en un archivo de texto (esto no es seguro para producción)
+                var userData = { username: username, password: password };
+                alert('Registro exitoso!\n\n' + JSON.stringify(userData));
+    
+                // Limpia los campos después del registro (puedes redirigir al usuario a otra página en un entorno real)
+                document.getElementById('username').value = '';
+                document.getElementById('password').value = '';
+                document.getElementById('confirm-password').value = '';
+            }
+        </script>
+    </body>
+    </html>
+    
+    

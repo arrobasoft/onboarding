@@ -1,0 +1,159 @@
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 100;
+    background-color: +rgb(255, 255, 255);
+}
+
+#gato {
+    border: 10px solid blue;
+    padding: 10px;
+}
+
+#fondo {
+    background-color: aqua;
+    background-image: url("descarga.png");
+    height: 144px;
+}
+
+#elpablo {
+    background-color: rgb(255, 255, 255);
+    background-image: url("2991148.png");
+    height: 128px;
+}
+#elofertas {
+    background-color: rgb(255, 255, 255);
+    background-image: url("descarga.jpg");
+    height: 128px;
+}
+#inicio {
+    background-color: rgb(255, 255, 255);
+    background-image: url("image.ico");
+    height: 1125px;
+    background-repeat:no-repeat;
+}
+#facebook {
+    background-color: rgb(255, 255, 255);
+    background-image: url("facebook.jpg");
+    height: 1125px;
+    background-repeat:no-repeat;
+}
+#gato2 {
+    transition: box-shadow 0.3s ease;
+    background-color: #fff;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    padding: 0.25rem 0; 
+}
+
+#gato2 h2,p {
+    margin: 1rem;
+}
+
+#gato2 {
+    cursor: pointer;
+}
+
+#gato2:hover {
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0,5);
+}
+#gato3 {
+    transition: box-shadow 0.3s ease;
+    background-color: #fff;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    padding: 0.25rem 0; 
+}
+
+#gato3 h2,p {
+    margin: 1rem;
+}
+
+#gato3 {
+    cursor: pointer;
+}
+
+#gato3:hover {
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0,5);
+}
+
+#gato4 {
+    transition: box-shadow 0.3s ease;
+    background-color: #fff;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    padding: 0.25rem 0; 
+}
+
+#gato4 h2,p {
+    margin: 1rem;
+}
+
+#gato4 {
+    cursor: pointer;
+}
+
+#gato4:hover {
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0,5);
+}
+
+#gato5 {
+    transition: box-shadow 0.3s ease;
+    background-color: #fff;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    padding: 0.25rem 0; 
+}
+
+#gato5 h2,p {
+    margin: 1rem;
+}
+
+#gato5 {
+    cursor: pointer;
+}
+
+#gato5:hover {
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0,5);
+}
+
+#gato6 {
+    transition: box-shadow 0.3s ease;
+    background-color: #fff;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    padding: 0.25rem 0; 
+}
+
+#gato6 h2,p {
+    margin: 1rem;
+}
+
+#gato6 {
+    cursor: pointer;
+}
+
+#gato6:hover {
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0,5);
+}
+
+
+#gato7 {
+    transition: box-shadow 0.3s ease;
+    background-color: #fff;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    padding: 0.25rem 0; 
+}
+
+#gato7 h2,p {
+    margin: 1rem;
+}
+
+#gato7 {
+    cursor: pointer;
+}
+
+#gato7:hover {
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0,5);
+}
+
