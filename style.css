@@ -11,29 +11,37 @@ body{
 
 #fondo {
     background-color: aqua;
-    background-image: url("descarga.png");
+    background-image: url("../img/descarga.png");
     height: 144px;
 }
 
 #elpablo {
     background-color: rgb(255, 255, 255);
-    background-image: url("2991148.png");
+    background-image: url("../img/2991148.png");
     height: 128px;
 }
 #elofertas {
     background-color: rgb(255, 255, 255);
-    background-image: url("descarga.jpg");
+    background-image: url("../img/descarga.jpg");
     height: 128px;
 }
 #inicio {
-    background-color: rgb(255, 255, 255);
-    background-image: url("image.ico");
+    background-color: rgb(53, 53, 53);
     height: 1125px;
+    background-image: url("../img/f.ico");
+    background-repeat:no-repeat;
+}
+
+
+#sumadre {
+    background-color: rgb(250, 250, 250);
+    height: 1125px;
+    background-image: url("../img/logo borrado.png");
     background-repeat:no-repeat;
 }
 #facebook {
     background-color: rgb(255, 255, 255);
-    background-image: url("facebook.jpg");
+    background-image: url("../img/facebook.jpg");
     height: 1125px;
     background-repeat:no-repeat;
 }
@@ -157,3 +165,55 @@ body{
     box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0,5);
 }
 
+#gato8 {
+    transition: box-shadow 0.3s ease;
+    background-color: #fff;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    padding: 0.25rem 0; 
+}
+
+#gato8 h2,p {
+    margin: 1rem;
+}
+
+#gato8 {
+    cursor: pointer;
+}
+
+#gato8:hover {
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0,5);
+}
+
+
+#fiking {
+    transition: box-shadow 0.3s ease;
+    background-color: #fff;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    padding: 0.25rem 0; 
+}
+
+#fiking h2,p {
+    margin: 1rem;
+}
+
+#fiking {
+    cursor: pointer;
+}
+
+#fiking:hover {
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0,5);
+}
+
+#fiking{
+    float: right;
+}
+
+#link1:link {
+    color: black;
+}
+
+#link1:visited {
+    color: #ff0000;
+}
