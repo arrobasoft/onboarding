@@ -20,6 +20,9 @@ body{
     background-image: url("../img/2991148.png");
     height: 128px;
 }
+
+
+
 #elofertas {
     background-color: rgb(255, 255, 255);
     background-image: url("../img/descarga.jpg");
@@ -32,11 +35,17 @@ body{
     background-repeat:no-repeat;
 }
 
+#navidad {
+    background-color: rgb(53, 53, 53);
+    height: 1125px;
+    background-image: url("../img/navidad.ico");
+    background-repeat:no-repeat;
+}
 
 #sumadre {
     background-color: rgb(250, 250, 250);
     height: 1125px;
-    background-image: url("../img/logo borrado.png");
+    background-image: url("../img/image.ico");
     background-repeat:no-repeat;
 }
 #facebook {
@@ -45,6 +54,14 @@ body{
     height: 1125px;
     background-repeat:no-repeat;
 }
+
+#cuentos {
+    background-color: rgb(255, 255, 255);
+    background-image: url("../img/KIDA.PNG");
+    height: 221px;
+    background-repeat:no-repeat;
+}
+
 #gato2 {
     transition: box-shadow 0.3s ease;
     background-color: #fff;
@@ -185,6 +202,85 @@ body{
     box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0,5);
 }
 
+#gato9 {
+    transition: box-shadow 0.3s ease;
+    background-color: #fff;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    padding: 0.25rem 0; 
+}
+
+#gato9 h2,p {
+    margin: 1rem;
+}
+
+#gato9 {
+    cursor: pointer;
+}
+
+#gato9:hover {
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0,5);
+}
+
+#gato10 {
+    transition: box-shadow 0.3s ease;
+    background-color: #fff;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    padding: 0.25rem 0; 
+}
+
+#gato10 h2,p {
+    margin: 1rem;
+}
+
+#gato10 {
+    cursor: pointer;
+}
+
+#gato10:hover {
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0,5);
+}
+
+#gato11 {
+    transition: box-shadow 0.3s ease;
+    background-color: #fff;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    padding: 0.25rem 0; 
+}
+
+#gato11 h2,p {
+    margin: 1rem;
+}
+
+#gato11 {
+    cursor: pointer;
+}
+
+#gato11:hover {
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0,5);
+}
+
+#gato12 {
+    transition: box-shadow 0.3s ease;
+    background-color: #fff;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    padding: 0.25rem 0; 
+}
+
+#gato12 h2,p {
+    margin: 1rem;
+}
+
+#gato12 {
+    cursor: pointer;
+}
+
+#gato12:hover {
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0,5);
+}
 
 #fiking {
     transition: box-shadow 0.3s ease;
