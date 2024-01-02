@@ -5,6 +5,7 @@
      <title>Recetas Caseras</title>
       <link rel="stylesheet" href="css/cocina.css">
       <link rel="icon" href="img/logo.ico">
+      <script src="js/main.js"></script>
   </head>   
  
   <body>
@@ -25,53 +26,11 @@
                 </li>
               </ul>
           </section>
-            <ul>
-                <li>
-                    400 g de pasta (puedes usar tu forma favorita)
-                </li>
-                <li>
-                    500 g de carne molida (puede ser de res, cerdo, o una mezcla)
-                </li>
-                <li>
-                    1 huevo
-                </li>
-                <li>
-                    1/2 taza de pan rallado
-                </li>
-                <li>
-                    1/4 taza de queso parmesano rallado
-                </li>
-                <li>
-                    1 diente de ajo, picado finamente
-                </li>
-                <li>
-                    1 cucharadita de sal
-                </li>
-                <li>
-                    1/2 cucharadita de pimienta
-                </li>
-                <li>
-                    2 latas (400 g cada una) de tomate triturado
-                </li>
-                <li>
-                    2 cucharadas de aceite de oliva
-                </li>
-                <li>
-                    1 cucharadita de azúcar
-                </li>
-                <li>
-                    1 cucharadita de orégano seco
-                </li>
-                <li>
-                    1 cucharadita de albahaca seca
-                </li>
-                <li>
-                    Sal y pimienta al gusto
-                </li>
-                <li>
-                    Queso parmesano adicional para espolvorear (opcional)
-                </li>
-            </ul> 
+            <ul id="recetas"></ul> 
+
+            <script>
+                document.getElementById('recetas').innerHTML = verIngredientes('guiso');
+            </script>
         </section>
 
         <section>
