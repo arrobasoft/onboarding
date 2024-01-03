@@ -1,70 +1,65 @@
 import { useState } from "react"
+import confetti from "canvas-confetti";
 
-const TURNS ={
-  X: 'x',
-  O: 'o'
-}
+import { Square } from "./componentes/square.jsx"
+import { TURNS } from "./constance.js"
+import { checkWinnerFrom, checkEndGame} from "./LOGIG/board.js";
+import { WinnerModal } from "./componentes/WinnerModal.jsx";
+import { saveGameToStorage,resetGameStorage } from "./LOGIG/storage.js";
 
-const Square = ({ children, isSelected, updateBoard, index }) => {
-  const className =`square ${isSelected ? 'is-selected' : ''}`
-  const handleCLic = () => {
-    updateBoard()
-  }
-
-  return (
-    <div onClick={handleCLic} className="square">
-      {children}
-    </div>
-  )
-}
-
-const WINNER_COMBO =[ 
-  [0,1,2]
-  [3,4,5]
-  [6,7,8]
-  [0,3,6]
-  [1,4,7]
-  [2,5,8]
-  [0,4,8]
-  [2,4,6]
-]
 
 function App() {
-const[board, setBoard] = useState(Array(9).fill(null))
+ const[board, setBoard] = useState(() => {
+  const boardFromStorage = window.localStorage.getItem('board')
+  if (boardFromStorage) return JSON.parse(boardFromStorage)
+  return Array(9).fill(null)
+ })
 
-const [turn, setTurn] = useState(TURNS.X)
+ const [turn, setTurn] = useState(() => {
+  const turnFormStorage = window.localStorage.getItem('turn')
+  return turnFormStorage ?? TURNS.X
+ })
 
-const [winner, setWinner] = useState(null)
+ const [winner, setWinner] = useState(null)
 
-const checkWinner = (boardToCheck) =>{
- for (const combo of WINNER_COMBO) {
-  const [a, b ,c] = combo
-  if (
-    boardToCheck[a] &&
-    boardToCheck[a] === boardToCheck[b] &&
-    boardToCheck[a] === boardToCheck[c]
-  ){
-    return boardToCheck[a]
+ const resetGame = () => {
+  setBoard(Array(9).fill(null))
+  setTurn(TURNS.X)
+  setWinner(null)
+  
+  resetGameStorage()
+}
+
+
+  const updateBoard = (index) => {
+    if (board[index] || winner) return
+    
+    const newBoard = [...board]
+     newBoard [index] = turn 
+    setBoard(newBoard)
+  
+    const newTurn = turn === TURNS.X ? TURNS.O : TURNS.X 
+    setTurn(newTurn)
+
+    saveGameToStorage({
+      board: newBoard,
+      turn: newTurn
+    })
+  
+    const newWinner = checkWinnerFrom(newBoard)
+   if (newWinner) {
+    confetti()
+    setWinner(newWinner)
+  } else if (checkEndGame(newBoard)) {
+    setWinner(false)
   }
  }
- return null
-}
 
-const updateBoard = (index) => {
-  if (board[index]) return
-  const newBoard = [...board]
-  newBoard[index] = turn 
-  setBoard(newBoard)
-}
-
-const newTurn = () => {
-  const newTurn = turn === TURNS.X ? TURNS.O : TURNS.X 
-  setTurn(newTurn)
-}
 
   return (
     <main className="board">
       <h1>tic-tac-toe</h1>
+      <button onClick={resetGame}>Reset del juego</button>
       <section className="game">
         {
           board.map((_, index)=> {
@@ -84,6 +79,8 @@ const newTurn = () => {
         <Square isSelected = {turn === TURNS.X}>{TURNS.X}</Square>
         <Square isSelected = {turn === TURNS.O}>{TURNS.O}</Square>
       </section>
+      
+      <WinnerModal resetGame={resetGame} winner={winner}/>
     </main>
   )
 }
